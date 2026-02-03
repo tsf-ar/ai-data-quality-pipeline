@@ -1,134 +1,130 @@
-Project Title
+\# AI Data Cleaning, Validation \& QA Pipeline (Python)
+>>>>>>> 7a4f395 (Refine README with clear structure and documentation)
 
 
 
-AI Data Cleaning, Validation \& QA Pipeline (Python)
+\## Overview
+
+This repository contains an end-to-end AI data preparation pipeline built using Python and Pandas.  
+
+The project focuses on cleaning, validating, and quality-checking multilingual text data, with special attention to RTL languages such as Arabic and Urdu, before it is used for AI annotation or model training.
 
 
 
-Overview
+The pipeline mirrors real-world workflows used in AI data annotation, Trust \& Safety, and AI Ops teams, where data quality and linguistic accuracy are critical.
 
 
+\## Key Features
 
-This project demonstrates an end-to-end AI data preparation pipeline using Python and Pandas. It focuses on multilingual and RTL text (Arabic and Urdu), covering data cleaning, validation, and quality assurance before data is used for AI annotation or model training.
+\- Load and inspect CSV and JSON datasets
 
+\- Clean multilingual text safely (punctuation removal, whitespace normalization, Unicode-aware handling)
 
+\- Validate annotation labels
 
-Key Capabilities
+\- Apply data quality rules (short text detection, duplicates, basic language mismatch checks)
 
+\- Generate cleaned datasets and QA summary reports
 
-
-Load and inspect CSV and JSON datasets
-
-
-
-Clean multilingual text safely (punctuation removal, whitespace normalization)
-
+\- Run the entire pipeline from the command line
 
 
-Validate annotation labels
-
-
-
-Apply data quality rules (short text, duplicates, language mismatch)
-
-
-
-Generate cleaned datasets and QA reports
-
-
-
-Run the entire pipeline from the command line
-
-
-
-Project Structure
+\## Project Structure
 
 ai-data-python/
 
 ├── data/
 
-│   ├── practice\_dataset.csv
+│ ├── practice\_dataset.csv
 
-│   ├── cleaned\_dataset.csv
+│ ├── cleaned\_dataset.csv
 
-│   └── qa\_report.txt
+│ └── qa\_report.txt
 
 │
 
 ├── scripts/
 
-│   ├── clean\_text.py
+│ ├── clean\_text.py # Text cleaning logic
 
-│   ├── validate\_labels.py
+│ ├── validate\_labels.py # Label validation
 
-│   └── run\_pipeline.py
+│ └── run\_pipeline.py # End-to-end pipeline runner
 
 │
 
 ├── notebooks/
 
-│   ├── learning and QA notebooks
+│ ├── Python basics, text processing, Pandas, JSON handling
+
+│ ├── Data quality rule design and experimentation
 
 │
 
 └── README.md
 
 
-
-How to Run the Pipeline
-
+\## How to Run the Pipeline
 
 
-From the project root:
+
+From the project root directory:
 
 
+
+```bash
 
 python scripts/run\_pipeline.py
 
 
 
+\### Outputs
 
+\- `data/cleaned\_dataset.csv` — cleaned and validated dataset
 
-Outputs:
-
-
-
-data/cleaned\_dataset.csv
-
-
-
-data/qa\_report.txt
+\- `data/qa\_report.txt` — summary of data quality checks
 
 
 
-Why This Project
+\## Why This Project
 
 
 
-This project mirrors real-world AI data workflows used in Trust \& Safety, AI Ops, and data annotation teams, where data quality, linguistic accuracy, and reproducibility are critical.
+AI models are only as good as the data they are trained on.  
+
+This project demonstrates how to apply disciplined data cleaning, validation, and QA thinking before data reaches annotation teams or models.
 
 
 
-Skills Demonstrated
+It reflects practical workflows used in:
+
+\- AI data annotation
+
+\- Trust \& Safety operations
+
+\- AI Ops and data quality roles
 
 
 
-Python (Pandas, file handling, scripting)
+\## Skills Demonstrated
 
 
 
-AI data preprocessing
+\- Python (Pandas, scripting, file handling)
+
+\- AI data preprocessing pipelines
+
+\- Annotation QA and validation
+
+\- Multilingual / RTL text handling (Arabic \& Urdu)
+
+\- Reproducible, automation-ready workflows
 
 
 
-Annotation QA and validation
+\## Notes
 
+This project was built to reflect real-world AI data workflows rather than tutorial-style examples.
 
-
-Multilingual / RTL text handling
-
-
-
-Automation-ready pipelines
+The emphasis is on data quality, linguistic awareness, and reproducibility — all essential for production AI systems.
 
