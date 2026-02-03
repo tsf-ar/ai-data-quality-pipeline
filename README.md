@@ -20,22 +20,25 @@ This repository contains a production-ready data pipeline built with **Python an
 ---
 
 ## Project Structure
+```text
 ai-data-python/
 ├── data/
-│ ├── practice_dataset.csv
-│ ├── cleaned_dataset.csv
-│ └── qa_report.txt
+│   ├── practice_dataset.csv
+│   ├── cleaned_dataset.csv
+│   └── qa_report.txt
 │
 ├── scripts/
-│ ├── clean_text.py # Text cleaning logic
-│ ├── validate_labels.py # Label validation
-│ └── run_pipeline.py # End-to-end pipeline runner
+│   ├── clean_text.py          # Text cleaning logic
+│   ├── validate_labels.py     # Label validation
+│   └── run_pipeline.py        # End-to-end pipeline runner
 │
 ├── notebooks/
-│ ├── Python basics, text processing, Pandas, JSON handling
-│ ├── Data quality rule design and experimentation
+│   ├── Python basics, text processing, Pandas, JSON handling
+│   ├── Data quality rule design and experimentation
 │
 └── README.md
+```
+
 ---
 
 ## Quick Start
