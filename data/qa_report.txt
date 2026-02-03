@@ -1,0 +1,4 @@
+total_records: 4
+short_texts: 0
+duplicate_texts: 0
+invalid_labels: 0

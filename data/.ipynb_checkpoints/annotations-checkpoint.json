@@ -1,0 +1,22 @@
+[
+  {
+    "text": "میں پائتھن سیکھ رہا ہوں",
+    "language": "ur",
+    "label": "neutral"
+  },
+  {
+    "text": "أحب البرمجة",
+    "language": "ar",
+    "label": "positive"
+  },
+  {
+    "text": "This is spam content",
+    "language": "en",
+    "label": "unsafe"
+  },
+  {
+    "text": "هذا تعليق محايد",
+    "language": "ar",
+    "label": "neutral"
+  }
+]
