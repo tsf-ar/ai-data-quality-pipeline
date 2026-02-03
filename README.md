@@ -22,20 +22,21 @@ This repository contains a production-ready data pipeline built with **Python an
 ## Project Structure
 ai-data-python/
 ├── data/
-│   ├── practice_dataset.csv    # Raw input data
-│   ├── cleaned_dataset.csv     # Processed output
-│   └── qa_report.txt           # Quality audit log
+│ ├── practice_dataset.csv
+│ ├── cleaned_dataset.csv
+│ └── qa_report.txt
 │
 ├── scripts/
-│   ├── clean_text.py           # Text cleaning logic
-│   ├── validate_labels.py      # Label validation
-│   └── run_pipeline.py         # End-to-end pipeline runner
+│ ├── clean_text.py # Text cleaning logic
+│ ├── validate_labels.py # Label validation
+│ └── run_pipeline.py # End-to-end pipeline runner
 │
 ├── notebooks/
-│   ├── Python basics, text processing, Pandas, JSON handling
-│   └── Data quality rule design and experimentation
+│ ├── Python basics, text processing, Pandas, JSON handling
+│ ├── Data quality rule design and experimentation
 │
 └── README.md
+---
 
 ## Quick Start
 
@@ -43,17 +44,20 @@ From the project root directory:
 
 ```bash
 python scripts/run_pipeline.py
-Outputs
-data/cleaned_dataset.csv — cleaned and validated dataset
-data/qa_report.txt — summary of data quality checks
-
+```
 ---
+## Outputs
+- data/cleaned_dataset.csv — cleaned and validated dataset
+- data/qa_report.txt — summary of data quality checks
+
 ## Pipeline Features
 
-Stage	Script	Function
-Text Cleaning	clean_text.py	Punctuation removal, whitespace normalization, Unicode-aware handling
-Label Validation	validate_labels.py	Schema enforcement for annotation labels
-QA Reporting	run_pipeline.py	Orchestrates full pipeline + generates audit reports
+| Stage                | Script               | Function                                                              |
+| -------------------- | -------------------- | --------------------------------------------------------------------- |
+| **Text Cleaning**    | `clean_text.py`      | Punctuation removal, whitespace normalization, Unicode-aware handling |
+| **Label Validation** | `validate_labels.py` | Schema enforcement for annotation labels                              |
+| **QA Reporting**     | `run_pipeline.py`    | Orchestrates full pipeline + generates audit reports                  |
+
 
 ### Why This Project
 AI models are only as good as the data they are trained on. This project demonstrates disciplined data preparation workflows essential for production AI systems:
